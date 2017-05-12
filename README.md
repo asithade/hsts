@@ -1,24 +1,17 @@
 # LH HSTS
-Tags:              HSTS, https, ssl, security, redirect
-Requires at least: 3.0
-Tested up to:      4.7.4
-License:           GPLv2 or later
-License URI:       http://www.gnu.org/licenses/gpl-2.0.html
 
-```
-Disclaimer
+## Disclaimer
 This plugin was originally created by [Peter Shaw](https://profiles.wordpress.org/shawfactor) and I've just modified it and made it more user friendly and structured.
-```
-
-HSTS is HTTP Strict Transport Security, a means to enforce using SSL even if the user accesses the site through HTTP and not HTTPS.
 
 ## Description
+
+HSTS is HTTP Strict Transport Security, a means to enforce using SSL even if the user accesses the site through HTTP and not HTTPS.
 
 This plugin send the proper headers for full ssl security. For more information on what this is and why it is important visit: http://en.wikipedia.org/wiki/HTTP_Strict_Transport_Security
 
 The options are preset to enable browsers to preload the HSTS directive but can be overwritten by filters which are clearly documented in the code.
 
-##Did you find this plugin helpful? Please consider [writing a review](https://wordpress.org/support/view/plugin-reviews/lh-hsts).##
+#### Did you find this plugin helpful? Please consider [writing a review](https://wordpress.org/support/view/plugin-reviews/lh-hsts).##
 
 ## Installation
 
@@ -27,11 +20,11 @@ The options are preset to enable browsers to preload the HSTS directive but can 
 
 ## Frequently Asked Questions
 
-##### How do I change the behaviour of this plugin?
+## How do I change the behaviour of this plugin?
 
 Through filters, all of which are commented in the code and will be documented below.
 
-### To update the max-age settings, add the following code to your functions.php
+##### To update the max-age settings, add the following code to your functions.php
 ```
 add_filter('lh_hsts_max_age', 'modify_ls_hsts_max_age_func');
 
@@ -40,7 +33,7 @@ function modify_ls_hsts_max_age_func( $max_age ){
 }
 ```
 
-### To update the subdomain settings, add the following code to your functions.php
+##### To update the subdomain settings, add the following code to your functions.php
 ```
 add_filter('lh_hsts_subdomain', 'modify_ls_hsts_subdomain_func');
 
@@ -49,7 +42,7 @@ function modify_ls_hsts_subdomain_func( $subdomain ){
 }
 ```
 
-### To update the preload setting, add the following code to your functions.php
+##### To update the preload setting, add the following code to your functions.php
 ```
 add_filter('lh_hsts_preload', 'modify_ls_hsts_preload_func');
 
@@ -58,7 +51,7 @@ function modify_ls_hsts_preload_func( $preload ){
 }
 ```
 
-### To update the redirect setting, add the following code to your functions.php
+##### To update the redirect setting, add the following code to your functions.php
 ```
 add_filter('lh_hsts_redirect', 'modify_ls_hsts_redirect_func');
 
