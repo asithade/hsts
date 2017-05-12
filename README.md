@@ -20,7 +20,7 @@ The options are preset to enable browsers to preload the HSTS directive but can 
 
 ## Frequently Asked Questions
 
-## How do I change the behaviour of this plugin?
+#### How do I change the behaviour of this plugin?
 
 Through filters, all of which are commented in the code and will be documented below.
 
