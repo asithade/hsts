@@ -27,10 +27,6 @@ if (!class_exists('LH_HSTS_Plugin')) {
 			add_filter( 'lh_hsts_redirect', array($this, 'lh_hsts_redirect_func'));
 			add_filter( 'lh_hsts_max_age', array($this, 'lh_hsts_max_age_func'));
 
-			$this->max_age = apply_filters('lh_hsts_max_age', 15984000);
-			$this->subdomain = apply_filters('lh_hsts_subdomain', true);
-			$this->preload = apply_filters('preload', true);
-			$this->redirect = apply_filters('lh_hsts_redirect', true);
 			$this->uri = $_SERVER['REQUEST_URI'];
 			$this->domain = $_SERVER['HTTP_HOST'];
 			$this->current_domain = get_site_url();
@@ -58,9 +54,13 @@ if (!class_exists('LH_HSTS_Plugin')) {
 			if($this->current_domain == "http://". $this->domain || $this->current_domain == "https://". $this->domain){
 				if (isset($_SERVER['HTTPS'])){
 					//default max-age in seconds (equivalent to 185 days to allow pre-loading)
+					$this->max_age = apply_filters('lh_hsts_max_age', 15984000);
+					$this->subdomain = apply_filters('lh_hsts_subdomain', true);
+					$this->preload = apply_filters('preload', true);
+					$this->redirect = apply_filters('lh_hsts_redirect', true);
 
-					$string = "max-age=".$this->maxage.";";
-
+					$string = "max-age=".$this->max_age.";";
+					var_dump($this->subdomain);
 					if($this->subdomain){ 
 						$string .= " includeSubDomains;";
 					}
