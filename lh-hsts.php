@@ -13,7 +13,7 @@ Contributors: asitha
 if (!class_exists('LH_HSTS_Plugin')) {
 
 	class  LH_HSTS_Plugin{
-		private $max_age
+		private $max_age;
 		private $subdomain; 
 		private $preload;
 		private $redirect;
