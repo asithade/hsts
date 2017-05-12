@@ -63,13 +63,13 @@ function modify_ls_hsts_redirect_func( $redirect ){
 ## Changelog
 
 ##### 1.00 - February 28, 2016
-# Initial release
+* Initial release
 
 ##### 1.10 - March 28, 2016
-# Use correct domain
+* Use correct domain
 
 ##### 1.11 - April 02, 2017
-# Added class exists check
+* Added class exists check
 
 ##### 1.2 - May 11, 2017
-# Just made everything look pretty and structured
+* Just made everything look pretty and structured
