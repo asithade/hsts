@@ -1,7 +1,7 @@
 # LH HSTS
 
 ## Disclaimer
-This plugin was originally created by [Peter Shaw](https://profiles.wordpress.org/shawfactor) and I've just modified it and made it more user friendly and structured.
+This plugin was originally created by [Peter Shaw](https://profiles.wordpress.org/shawfactor) and [I've](https://github.com/asithade) just modified it and made it more user friendly and structured.
 
 ## Description
 
