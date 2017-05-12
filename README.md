@@ -24,7 +24,7 @@ The options are preset to enable browsers to preload the HSTS directive but can 
 
 Through filters, all of which are commented in the code and will be documented below.
 
-##### To update the max-age settings, add the following code to your functions.php
+##### To update the max-age settings, add the following code to your `functions.php`
 ```
 add_filter('lh_hsts_max_age', 'modify_ls_hsts_max_age_func');
 
@@ -33,7 +33,7 @@ function modify_ls_hsts_max_age_func( $max_age ){
 }
 ```
 
-##### To update the subdomain settings, add the following code to your functions.php
+##### To update the subdomain settings, add the following code to your `functions.php`
 ```
 add_filter('lh_hsts_subdomain', 'modify_ls_hsts_subdomain_func');
 
@@ -42,7 +42,7 @@ function modify_ls_hsts_subdomain_func( $subdomain ){
 }
 ```
 
-##### To update the preload setting, add the following code to your functions.php
+##### To update the preload setting, add the following code to your `functions.php`
 ```
 add_filter('lh_hsts_preload', 'modify_ls_hsts_preload_func');
 
@@ -51,7 +51,7 @@ function modify_ls_hsts_preload_func( $preload ){
 }
 ```
 
-##### To update the redirect setting, add the following code to your functions.php
+##### To update the redirect setting, add the following code to your `functions.php`
 ```
 add_filter('lh_hsts_redirect', 'modify_ls_hsts_redirect_func');
 
