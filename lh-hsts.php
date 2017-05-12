@@ -60,7 +60,6 @@ if (!class_exists('LH_HSTS_Plugin')) {
 					$this->redirect = apply_filters('lh_hsts_redirect', true);
 
 					$string = "max-age=".$this->max_age.";";
-					var_dump($this->subdomain);
 					if($this->subdomain){ 
 						$string .= " includeSubDomains;";
 					}
