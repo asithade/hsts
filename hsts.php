@@ -1,6 +1,6 @@
 <?php
 /*
-Plugin Name: HSTS
+Plugin Name: DS HSTS
 Plugin URI: https://github.com/asithade/hsts
 Description: Adds HTTP Strict Transport Security to wordpress
 Author: Asitha de Silva
@@ -9,9 +9,9 @@ Author URI: http://asithadesilva.com
 Contributors: shawfactor
 */
 
-if (!class_exists('HSTS_Plugin')) {
+if (!class_exists('DS_HSTS_Plugin')) {
 
-	class HSTS_Plugin {
+	class DS_HSTS_Plugin {
 		private $max_age;
 		private $subdomain; 
 		private $preload;
@@ -59,7 +59,7 @@ if (!class_exists('HSTS_Plugin')) {
 		}
 
 		public function hsts_register_options_page() {
-			add_options_page('HSTS', 'HSTS', 'manage_options', 'hsts', array($this, 'hsts_plugin_options_page'));
+			add_options_page('HSTS', 'HSTS', 'manage_options', 'hsts', array($this, 'DS_hsts_plugin_options_page'));
 		}
 
 		public function hsts_register_settings() {
@@ -73,7 +73,7 @@ if (!class_exists('HSTS_Plugin')) {
 		   register_setting( 'hsts_option_group', 'hsts-max-age', 'hsts-callback' );
 		}
 
-		public function hsts_plugin_options_page() {
+		public function DS_hsts_plugin_options_page() {
 			$subdomain = get_option('hsts-include-subdomain');
 			$preload = get_option('hsts-include-preload');
 			$redirect = get_option('hsts-include-redirect');
@@ -107,5 +107,5 @@ if (!class_exists('HSTS_Plugin')) {
 		}
 	}
 
-	$HSTS = new HSTS_Plugin();
+	$HSTS = new DS_HSTS_Plugin();
 }
