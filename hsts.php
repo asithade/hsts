@@ -63,7 +63,7 @@ if (!class_exists('HSTS_Plugin')) {
 		}
 
 		public function hsts_register_settings() {
-		   add_option( 'hsts-include-subdomain', 'yes');
+		   add_option( 'hsts-include-subdomain', 'no');
 		   add_option( 'hsts-include-preload', 'yes');
 		   add_option( 'hsts-include-redirect', '');
 		   add_option( 'hsts-max-age', '15984000');
