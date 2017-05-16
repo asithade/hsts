@@ -9,9 +9,7 @@ HSTS is HTTP Strict Transport Security, a means to enforce using SSL even if the
 
 This plugin send the proper headers for full ssl security. For more information on what this is and why it is important visit: http://en.wikipedia.org/wiki/HTTP_Strict_Transport_Security
 
-The options are preset to enable browsers to preload the HSTS directive but can be overwritten by filters which are clearly documented in the code.
-
-#### Did you find this plugin helpful? Please consider [writing a review](https://wordpress.org/support/view/plugin-reviews/lh-hsts).##
+The options are preset to enable browsers to preload and include subdomains to the HSTS directive but can be changed in the options page.
 
 ## Installation
 
@@ -22,43 +20,7 @@ The options are preset to enable browsers to preload the HSTS directive but can 
 
 #### How do I change the behaviour of this plugin?
 
-Through filters, all of which are commented in the code and will be documented below.
-
-##### To update the max-age settings, add the following code to your `functions.php`
-```
-add_filter('lh_hsts_max_age', 'modify_ls_hsts_max_age_func');
-
-function modify_ls_hsts_max_age_func( $max_age ){
-	return false;
-}
-```
-
-##### To update the subdomain settings, add the following code to your `functions.php`
-```
-add_filter('lh_hsts_subdomain', 'modify_ls_hsts_subdomain_func');
-
-function modify_ls_hsts_subdomain_func( $subdomain ){
-	return false;
-}
-```
-
-##### To update the preload setting, add the following code to your `functions.php`
-```
-add_filter('lh_hsts_preload', 'modify_ls_hsts_preload_func');
-
-function modify_ls_hsts_preload_func( $preload ){
-	return false;
-}
-```
-
-##### To update the redirect setting, add the following code to your `functions.php`
-```
-add_filter('lh_hsts_redirect', 'modify_ls_hsts_redirect_func');
-
-function modify_ls_hsts_redirect_func( $redirect ){
-	return false;
-}
-```
+* Go to Settings > HSTS to change the options.
 
 ## Changelog
 
@@ -73,3 +35,6 @@ function modify_ls_hsts_redirect_func( $redirect ){
 
 ##### 1.2 - May 11, 2017
 * Just made everything look pretty and structured
+
+##### 1.0 - May 15, 2017
+* Filters are annoying, so I got rid of them
