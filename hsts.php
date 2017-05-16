@@ -1,6 +1,6 @@
 <?php
 /*
-Plugin Name: DS HSTS
+Plugin Name: HSTS
 Plugin URI: https://github.com/asithade/hsts
 Description: Adds HTTP Strict Transport Security to wordpress
 Author: Asitha de Silva
