@@ -1,4 +1,4 @@
-# LH HSTS
+# HSTS
 
 ## Disclaimer
 This plugin was originally created by [Peter Shaw](https://profiles.wordpress.org/shawfactor) and [I've](https://github.com/asithade) just modified it and made it more user friendly and structured.
@@ -9,7 +9,7 @@ HSTS is HTTP Strict Transport Security, a means to enforce using SSL even if the
 
 This plugin send the proper headers for full ssl security. For more information on what this is and why it is important visit: http://en.wikipedia.org/wiki/HTTP_Strict_Transport_Security
 
-The options are preset to enable browsers to preload and include subdomains to the HSTS directive but can be changed in the options page.
+The options are preset to enable browsers to preload to the HSTS directive but can be changed in the options page.
 
 ## Installation
 
