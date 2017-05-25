@@ -5,7 +5,7 @@ This plugin was originally created by [Peter Shaw](https://profiles.wordpress.or
 
 ## Description
 
-HSTS is HTTP Strict Transport Security, a means to enforce using SSL even if the user accesses the site through HTTP and not HTTPS.
+DS HSTS is HTTP Strict Transport Security Wordpress Plugin, a means to enforce using SSL even if the user accesses the site through HTTP and not HTTPS.
 
 This plugin send the proper headers for full ssl security. For more information on what this is and why it is important visit: http://en.wikipedia.org/wiki/HTTP_Strict_Transport_Security
 
@@ -13,7 +13,7 @@ The options are preset to enable browsers to preload to the HSTS directive but c
 
 ## Installation
 
-1. Upload the entire `lh-hsts` folder to the `/wp-content/plugins/` directory.
+1. Upload the entire `ds-hsts` folder to the `/wp-content/plugins/` directory.
 2. Activate the plugin through the 'Plugins' menu in WordPress.
 
 ## Frequently Asked Questions
