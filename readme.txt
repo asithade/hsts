@@ -7,7 +7,7 @@ Stable tag:        trunk
 License:           GPLv2 or later
 License URI:       http://www.gnu.org/licenses/gpl-2.0.html
 
-HSTS is HTTP Strict Transport Security, a means to enforce using SSL even if the user accesses the site through HTTP and not HTTPS.
+DS HSTS is HTTP Strict Transport Security Wordpress plugin, a means to enforce using SSL even if the user accesses the site through HTTP and not HTTPS.
 
 == Description ==
 
@@ -17,7 +17,7 @@ The options are preset to enable browsers to preload to the HSTS directive but c
 
 == Installation ==
 
-1. Upload the entire `lh-hsts` folder to the `/wp-content/plugins/` directory.
+1. Upload the entire `ds-hsts` folder to the `/wp-content/plugins/` directory.
 2. Activate the plugin through the 'Plugins' menu in WordPress.
 
 == Frequently Asked Questions ==
